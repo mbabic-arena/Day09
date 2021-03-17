@@ -1,14 +1,15 @@
 // Only change code below this line
 function myDoWhile() {
   var i = 0;
-  myNumbers = "";
+  var myNumbers = "";
   do {
-    myNumbers += i + ", ";
-    console.log(i);
-    console.log(myNumbers.length);
-    console.log(myNumbers);
+    myNumbers += i;
+    if (i < 9) {
+      myNumbers += ", ";
+    }
     i++;
-  } while (i < 11);
+  } while (i < 10);
+  return myNumbers;
 }
 myDoWhile();
 

@@ -3,14 +3,15 @@ function inverseWhile() {
   var fiveNumbers = "";
 
   while (i >= 0) {
-    fiveNumbers += i + ",";
-    console.log(i);
-    console.log(fiveNumbers);
+    fiveNumbers += i;
+    if (i > 0) {
+      fiveNumbers += ",";
+    }
     i--;
   }
   return fiveNumbers;
 }
-
+inverseWhile();
 // Only change code above this line
 console.log(inverseWhile());
 module.exports = inverseWhile;
