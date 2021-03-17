@@ -1,0 +1,36 @@
+<h2>CatPhotoApp</h2>
+<main>
+    <a href="#">
+        <img src="https://bit.ly/3fUJAV1" alt="Cat lying on a tree branch." />
+    </a>
+    <ul>
+        <li>Purring</li>
+        <li>Rolling</li>
+        <li>Bunting</li>
+    </ul>
+    <ol>
+        <li>Feeling Lonely</li>
+        <li>Dirty Litter Boxes</li>
+        <li>Spoiled Food</li>
+    </ol>
+    <form action="/submit-cat-photo">
+        <div>
+            <label for="inside"></label><input id="inside" type="radio" name="inside-outside" value="Inside" checked>
+            Inside</label>
+            <label for="outside"></label><input id="outside" type="radio" name="inside-outside" value="Outside">
+            Outside</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="favorite_pet" value="Dog" checked>Dog</label>
+            <label><input type="checkbox" name="favorite_pet" value="Cat">Cat</label>
+            <label><input type="checkbox" name="favorite_pet" value="Hamster">Hamster</label>
+            <label> <input type="checkbox" name="favorite_pet" value="Bird">Bird</label>
+            <label><input type="checkbox" name="favorite_pet" value="Fish">Fish</label>
+        </div>
+        <input type="text" placeholder="cat photo URL" required>
+        <!--Showing message: "Please fill out this field"-->
+        <button type="submit">Submit</button>
+    </form>
+    <p>View more <a href="#">cat photos</a></p>
+</main>
+<footer id="footer"></footer>
